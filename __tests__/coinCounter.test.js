@@ -13,7 +13,7 @@ describe('counter', () => {
     expect(counter(.30)).toEqual("1 quarters");
   });
 
-  // test('should return amount of dimes needed', () => {
-  //   expect(counter(20)).toEqual("2 dimes");
-  // })
+  test('should return amount of dimes needed', () => {
+    expect(counter(.20)).toEqual("2 dimes");
+  });
 });
