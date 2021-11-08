@@ -13,7 +13,9 @@
 
 ## Description
 
-A coin counter application created with function programming. This app takes X amount of money and determines the amount of change needed in quarters, dimes, nickles, and pennies.
+A coin counter application created with functional programming. This app takes X amount of money and determines the amount of change needed in quarters, dimes, nickles, and pennies.
+
+This project contains a solution using recursion and a solution using closure.
 
 ## Setup/Installation Requirements
 
@@ -24,9 +26,11 @@ A coin counter application created with function programming. This app takes X a
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+nope
 
 ## License
+MIT
 
 ## Contact Information
+chynnalew@yahoo.com
+github.com/paigetiedeman
