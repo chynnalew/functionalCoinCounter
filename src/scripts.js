@@ -1,8 +1,7 @@
 // Business Logic
 
-// pennies, nickle, dimes, quarters
-
-export default function counter(amount) {
+// recursive solution:
+export function counter(amount) {
   if (isNaN(amount)) {
     return "not a number";
   }
@@ -20,3 +19,16 @@ export default function counter(amount) {
   }
   return Math.round((amount * 100)) + " pennies";
 }
+
+
+// closure solution:
+export const coinClosure = (coins) => {
+  return function(totalCost){
+    return `${Math.floor(totalCost/coins)} with ${totalCost % coins} remaining`
+  }
+}
+
+export const quarters = coinClosure(25);
+export const dimes = coinClosure(10);
+export const nickles = coinClosure(5);
+export const pennies = coinClosure(1);

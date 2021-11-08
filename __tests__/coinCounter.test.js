@@ -1,4 +1,4 @@
-import counter from "../src/scripts";
+import { counter, coinClosure, quarters, dimes, nickles, pennies } from "../src/scripts";
 
 describe('counter', () => {
   test('should recognize if NaN', () => {
@@ -28,3 +28,19 @@ describe('counter', () => {
     expect(counter(.16)).toEqual("1 dimes 1 nickles 1 pennies");
   });
 });
+
+describe('coinClosure', () => {
+
+  test('should return quarters', () => {
+    expect(quarters(50)).toEqual("2 with 0 remaining");
+  });
+  test('should return dimes', () => {
+    expect(dimes(50)).toEqual("5 with 0 remaining");
+  });
+  test('should return 2 quarters', () => {
+    expect(nickles(16)).toEqual("3 with 1 remaining");
+  });
+  test('should return pennies', () => {
+    expect(pennies(5)).toEqual("5 with 0 remaining");
+  });
+})
