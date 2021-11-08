@@ -2,8 +2,10 @@
 
 // pennies, nickle, dimes, quarters
 
-export default function counter(amount){
-  if (amount % 5 !== 0) {
-    return (amount % 5) + " pennies";
+export default function counter(amount) {
+  if (amount % .25 === 0) {
+    return (amount / .25) + " quarters";
+  } else if (amount % .05 !== 0) {
+    return (amount % .05) * 100 + " pennies";
   } 
 }
