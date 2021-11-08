@@ -8,4 +8,12 @@ describe('counter', () => {
   test('should return amount of quarters needed', () => {
     expect(counter(.50)).toEqual("2 quarters");
   });
+
+  test('should return 1 quarter if the change is 30 cents', () => {
+    expect(counter(.30)).toEqual("1 quarters");
+  });
+
+  // test('should return amount of dimes needed', () => {
+  //   expect(counter(20)).toEqual("2 dimes");
+  // })
 });
