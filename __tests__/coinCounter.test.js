@@ -16,4 +16,8 @@ describe('counter', () => {
   test('should return amount of dimes needed', () => {
     expect(counter(.20)).toEqual("2 dimes");
   });
+
+  test('should return amount of nickles needed', () => {
+    expect(counter(.06)).toEqual("1 nickles");
+  });
 });

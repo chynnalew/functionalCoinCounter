@@ -7,7 +7,9 @@ export default function counter(amount) {
     return Math.floor(amount / .25) + " quarters";
   } else if (amount >= .10) {
     return Math.floor(amount/ .10) + " dimes";
-  } else if (amount % .05 !== 0) {
+  } else if (amount >= .05) {
+    return Math.floor(amount / .05) + " nickles";
+  }else if(amount % .05 !== 0) {
     return (amount % .05) * 100 + " pennies";
   } 
 }
